@@ -1,0 +1,4 @@
+xuesheng:xuesheng.o
+	gcc -o xuesheng xuesheng.o
+xuesheng.o: xuesheng.c
+	gcc -c  xuesheng.c

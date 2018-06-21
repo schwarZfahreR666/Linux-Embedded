@@ -1,0 +1,10 @@
+main: a.o b.o c.o d.o
+	gcc -o main a.o b.o c.o d.o
+a.o: a.c
+	gcc -c a.c
+b.o: b.c defs.h
+	gcc -c b.c
+c.o: c.c
+	gcc -c c.c
+d.o: d.c defs.h
+	gcc -c d.c

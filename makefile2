@@ -1,0 +1,13 @@
+all: main
+C=gcc
+main: a.o b.o c.o d.o
+	        $(C) -o main a.o b.o c.o d.o
+a.o: a.c
+	        $(C) -c a.c
+b.o: b.c defs.h
+	        $(C) -c b.c
+c.o: c.c
+	        $(C) -c c.c
+d.o: d.c defs.h
+	        $(C) -c d.c
+	
