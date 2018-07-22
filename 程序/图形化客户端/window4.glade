@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.20.0 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="window1">
+    <property name="name">window1</property>
+    <property name="width_request">630</property>
+    <property name="height_request">420</property>
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Chatroom</property>
+    <property name="default_width">630</property>
+    <property name="default_height">420</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkEntry" id="message">
+            <property name="name">message</property>
+            <property name="width_request">500</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="x">7</property>
+            <property name="y">376</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scroll">
+            <property name="name">scroll</property>
+            <property name="width_request">631</property>
+            <property name="height_request">295</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="shadow_type">in</property>
+            <child>
+              <object class="GtkTextView" id="gettext">
+                <property name="name">gettext</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="send">
+            <property name="label" translatable="yes">send</property>
+            <property name="name">send</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="x">516</property>
+            <property name="y">376</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Log in">
+            <property name="label" translatable="yes">Log in</property>
+            <property name="name">Log in</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="x">294</property>
+            <property name="y">318</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="usr_label">
+            <property name="name">use_label</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">usr</property>
+          </object>
+          <packing>
+            <property name="y">295</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="password_label">
+            <property name="name">password_label</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">password</property>
+          </object>
+          <packing>
+            <property name="y">333</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="usr_text">
+            <property name="name">usr_text</property>
+            <property name="width_request">180</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="x">97</property>
+            <property name="y">295</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="password_text">
+            <property name="name">password_text</property>
+            <property name="width_request">180</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="x">97</property>
+            <property name="y">335</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="logo">
+            <property name="name">logo</property>
+            <property name="width_request">110</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="stock">gtk-missing-image</property>
+            <property name="icon_size">6</property>
+          </object>
+          <packing>
+            <property name="x">403</property>
+            <property name="y">297</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="name">
+            <property name="name">name</property>
+            <property name="width_request">110</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="stock">gtk-missing-image</property>
+          </object>
+          <packing>
+            <property name="x">515</property>
+            <property name="y">297</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
